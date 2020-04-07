@@ -15,24 +15,24 @@ int main()
 {
 
     // basic printf demo = 16 by 18 characters on screen
-
-    uLCD.printf("\nHello uLCD World\n"); //Default Green on black text
-
-    uLCD.printf("\n  Starting Demo...");
-
+    uLCD.background_color(0xFFFFFF);
+    
+    uLCD.color(BLUE);
+    uLCD.printf("\n106061221\n"); //Default Green on black text
+    
     uLCD.text_width(4); //4X size text
 
     uLCD.text_height(4);
 
-    uLCD.color(RED);
+    uLCD.color(GREEN);
 
-    for (int i=10; i>=0; --i) {
+    for (int i=30; i>=0; --i) {
 
         uLCD.locate(1,2);
 
         uLCD.printf("%2D",i);
 
-        wait(.5);
+        wait(1);
 
     }
 
